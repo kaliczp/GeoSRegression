@@ -31,3 +31,8 @@ a.lm = lm(y ~ x ,a)
 abline(a.lm)
 summary(a.lm)
 ## Practice in 2017-04-05
+## Normal distribution density
+plot(dnorm)
+curve(dnorm,-10,10, xlim=c(-10,10),ylim=c(0,0.7))
+customdnorm <- function(x){dnorm(x, -2, 0.8)}
+curve(customdnorm,-10,10, add=TRUE)
