@@ -36,3 +36,10 @@ plot(dnorm)
 curve(dnorm,-10,10, xlim=c(-10,10),ylim=c(0,0.7))
 customdnorm <- function(x){dnorm(x, -2, 0.8)}
 curve(customdnorm,-10,10, add=TRUE)
+customdnorm <- function(x){dnorm(x, 2, 2)}
+curve(customdnorm,-10,10, add=TRUE)
+customdnorm <- function(x, m=3, s=1.5){dnorm(x, m, s)}
+
+hist(rnorm(10),  5,  freq=F, xlim=c(-3,3))
+curve(dnorm,-3,3, add=T)
+
