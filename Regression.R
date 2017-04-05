@@ -30,3 +30,4 @@ lm(y ~ x ,a)
 a.lm = lm(y ~ x ,a)
 abline(a.lm)
 summary(a.lm)
+## Practice in 2017-04-05
