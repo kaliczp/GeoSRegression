@@ -43,3 +43,12 @@ customdnorm <- function(x, m=3, s=1.5){dnorm(x, m, s)}
 hist(rnorm(10),  5,  freq=F, xlim=c(-3,3))
 curve(dnorm,-3,3, add=T)
 
+## Recall regression
+## Drop the intercept term
+a.lm = lm(y ~ x - 1,a)
+a.lm
+summary(a.lm)
+
+## Covariance and correlation
+cov(x,y)
+cor(x,y)
